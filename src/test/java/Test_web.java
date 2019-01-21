@@ -25,7 +25,7 @@ public class Test_web extends BaseTest{
         LOG.error("ERROR");
 
 
-        getDriver().get("https://mail.ukr.net/desktop/login");
+        DriverManager.getDriver().get("https://mail.ukr.net/desktop/login");
 
         Assert.assertEquals(true, true, "Error here");
 
@@ -40,8 +40,8 @@ public class Test_web extends BaseTest{
         LOG.debug("DEBUG");
         LOG.error("ERROR");
 
-        getDriver().get("http://gmail.com");
+        DriverManager.getDriver().get("http://gmail.com");
 
-        Assert.assertEquals(true, true, "Error here");
+        Assert.assertEquals(true, false, "Error here");
     }
 }
